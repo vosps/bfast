@@ -8,7 +8,8 @@ import multiprocessing as mp
 from functools import partial
 
 import numpy as np
-np.warnings.filterwarnings('ignore')
+import warnings
+warnings.filterwarnings('ignore')
 np.set_printoptions(suppress=True)
 from sklearn import linear_model
 
