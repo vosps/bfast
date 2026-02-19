@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "bfast"
+version = "0.7"
+description = "A Python library for Breaks For Additive Season and Trend (BFAST) that resorts to parallel computing for accelerating the computations."
+authors = ["Dmitry Serykh <dmitry.serykh@gmail.com>"]
+license = "GPL-3.0"
+readme = "README.rst"
+homepage = "http://bfast.readthedocs.io"
+repository = "https://github.com/diku-dk/bfast"
+packages = [{ include = "bfast" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+numpy = ">=1.11.0"
+pandas = ">=1.0.0"
+pyopencl = ">=2018.2.5"
+scikit-learn = ">=0.20.3"
+scipy = ">=1.2.1"
+matplotlib = ">=2.2.2"
+wget = ">=3.2"
+
+[tool.poetry.group.docs.dependencies]
+Sphinx = "2.2.0"
+sphinx-bootstrap-theme = "0.8.1"
+numpydoc = "1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
